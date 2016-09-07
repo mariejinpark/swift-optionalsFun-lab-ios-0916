@@ -14,6 +14,7 @@
  */
 var pet = "turtle 🐢"
 
+    //String
 
 
 
@@ -24,7 +25,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+    //String?
 
 
 
@@ -32,7 +33,7 @@ var petName: String?
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
+    //nil
 
 
 
@@ -44,8 +45,9 @@ var petName: String?
  */
 // write your code here
 
+   petName = "Longfellow Deeds"
 
-
+     //String?
 
 
 
@@ -55,10 +57,10 @@ var petName: String?
  */
 // write your code here
 
+    print(petName)
 
 
-
-
+    //Optional("Longfellow Deeds")
 
 
 /*: question6
@@ -66,9 +68,13 @@ var petName: String?
  */
 // write your code here
 
+if !(petName == nil) {
+    print (petName)
+} else {
+    print ("There is no pet name.")
+}
 
-
-
+Optional("Longfellow Deeds")
 
 
 
@@ -78,6 +84,11 @@ var petName: String?
 // write your code here
 
 
+if let petName = petName {
+    print (petName)
+}
+
+//Longfellow Deeds
 
 
 
@@ -89,8 +100,9 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
-
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,9 +112,14 @@ var anotherPetName: String?
  */
 // write your code here
 
+anotherPetName = "Charlie Girl"
 
-
-
+if anotherPetName == nil {
+    print("anotherPetName has no value")
+    }
+    else if let anotherPetName = anotherPetName {
+    print (anotherPetName)
+    }
 
 
 
@@ -114,11 +131,11 @@ var anotherPetName: String?
 // write your code here
 
 
+let myDogsName: String?
+    myDogsName = "Preciouses"
+    print (myDogsName)
 
-
-
-
-
+//Optional("Preciouses")
 
 
 /*: question11
@@ -126,7 +143,10 @@ var anotherPetName: String?
  */
 // write your code here
 
+let anotherConstant: String? = nil
+anotherConstant = "random"
 
+//error
 
 
 
